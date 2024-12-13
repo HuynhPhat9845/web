@@ -1,0 +1,38 @@
+.div_tong{
+    text-align: center;
+   
+}
+.div_banner{
+    width: 100%;
+    background-color: aqua;
+    height: 50px;
+}
+.div_logo{
+    float: left;
+    width: 30%;
+    height: 70px;
+    background-color: aquamarine;
+}
+.div_menungang{
+    float: right;
+    width: 70%;
+    height: 70px;
+    background-color: antiquewhite;
+}
+.div_menudoc{
+    clear: both;
+    float: left;
+    width: 30%;
+    height: 500px;
+    background-color: brown;
+}
+.div_timkiem{
+    float: right;
+    width: 70%;
+    height: 70px;
+    background-color: rgb(209, 209, 26);
+}
+.div_content{
+    background-color: rgb(41, 41, 246);
+    height: 570px;
+}

@@ -1,0 +1,384 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0d3;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #3a494b;
+    color: #f3d00bd5;
+    padding-top: 30px;
+    min-height: 100px;
+    border-bottom: #a8df3a 3px solid;
+    position: relative;
+    width: 100%;
+}
+
+header a {
+    color: #e2cece;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header h1 {
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header a:hover {
+    background-color: #e6dde4;
+    color: #333;
+}
+
+header li:hover > .dropdown-content {
+    display: block;
+}
+
+main {
+    padding: 20px;
+    background: #93aa9f;
+    min-height: 400px;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.movie-item {
+    background: #ccc8c8;
+    padding: 10%;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.movie-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.movie-item h3 {
+    margin: 10px 0;
+}
+
+.movie-item img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.movie-item h3:hover {
+    color: rgb(72, 183, 190);
+}
+
+.rating {
+    font-size: 24px;
+}
+
+.star {
+    color: gold;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #d4a115;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e6e6e6;
+    color: #d61b1b;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    min-width: 200px;
+}
+
+nav ul li .dropdown-content li {
+    display: block;
+}
+
+nav ul li .dropdown-content li a {
+    color: #7a0c0c;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.logo-phim {
+    width: 70px;
+    height: auto;
+}
+
+.search-icon {
+    width: 20px;
+    height: auto;
+}
+
+.search-form {
+    display: flex;
+}
+
+.img-small {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: none;
+    background-color: #ececec;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #4d76e7;
+}
+
+.carousel {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#carouselExampleIndicators {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(194, 33, 33, 0.5);
+}
+
+.carousel-indicators {
+    bottom: 10px;
+}
+
+.carousel-indicators li {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators .active {
+    background-color: rgba(218, 193, 193, 0.7);
+}
+
+footer {
+    background: #3a494b;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 20px;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+/* Responsive Styles */
+
+
+
+@media screen and (max-width: 768px) {
+    .movie-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header {
+        text-align: center;
+    }
+
+    header h1, header nav {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 10px;
+    }
+
+    header nav ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    header li {
+        display: inline-block;
+        padding: 10px;
+        position: relative; 
+    }
+
+    header li:hover > .dropdown-content { 
+        display: block;
+    }
+
+    .dropdown-content {
+        display: none; 
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+        left: 0;
+        top: 100%;
+    }
+
+    .dropdown-content li {
+        display: block;
+    }
+
+    .dropdown-content li a {
+        color: #000;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s;
+    }
+
+    .dropdown-content li a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .search-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-form input[type="text"],
+    .search-form button {
+        border-radius: 5px;
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .movie-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-form {
+        width: 100%;
+    }
+
+    .search-form input[type="text"],
+    .search-form button {
+        width: 100%;
+        border-radius: 5px;
+        margin: 5px 0;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        text-align: center;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header nav {
+        margin-top: 0;
+    }
+
+    .movie-item h3 {
+        font-size: 18px;
+    }
+
+    .movie-item p {
+        font-size: 14px;
+    }
+}

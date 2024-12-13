@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Phim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-tuIegMpxkPzhmlCVCuFetA2LBaH8oClC4Apyb8Nl3BSzs4mdC0HZlBsoStRxClXe3BlEdHjQ8mCGv+WSyMaPZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+   
+    <header>
+        <div class="container">
+            <h1>
+                <img src="img/LOGOPHIMM.png" class="logo-phim" alt="logo">TOPPHIM
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="webphim.html">Trang Chủ</a></li>
+                    <li class="dropdown">
+                        <a href="#">Thể Loại</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Hành Động</a></li>
+                            <li><a href="#">Tình Cảm</a></li>
+                            <li><a href="#">Kinh Dị</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#phimmoi">Phim Mới</a></li>
+                    <li><a href="#phimle">Phim Lẻ</a></li>
+                    <li><a href="#phimbo">Phim Bộ</a></li>
+                    <li><a href="lienhe.html">Liên Hệ</a></li>
+                    <li><a href="dangky.html">Đăng Nhập</a></li>
+                    <li>
+                        <form class="search-form">
+                            <input type="text" placeholder="Tìm kiếm...">
+                            <button type="submit">
+                                <img src="img/icons8-search-60.png" class="search-icon" alt="Search">
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+      </div>
+    </header>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner"> 
+            <div class="carousel-item active">
+                <img src="img/mau-poster-phim-viet-nam.jpg" class="d-block img-fluid" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/phim-chieu-rap-viet-nam-hai-huoc-3.jpg" class="d-block img-fluid" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/phim-chieu-rap-2.jpg" class="d-block img-fluid" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+                <img src="img/phim-chieu-rap-viet-nam-hai-huoc-8.jpg" class="d-block img-fluid" alt="Slide 4">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <main>
+        <div class="container">
+            <section id="phimmoi">
+                <h2>Phim Đề Xuất</h2>
+                <div class="movie-grid">
+                    <div class="movie-item">
+                        <img src="img/7DIrtrRgZWWO8jXklLXkkivqpBG.jpg" alt="Joker: Gã Hề">
+                        <h3><a href="phimjoker.html">Joker: Gã Hề</a></h3> 
+                        <p>Oct 01, 2019</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="movie-item">
+                        <img src="img/phimdiem.jpg" alt="Điểm Bùng Nổ">
+                        <h3><a href="phimbungno.html">Điểm Bùng Nổ</a></h3>
+                        <p>May 19, 2023</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="movie-item">
+                        <img src="img/84MHN3JvOV4ORHgELrQM6SBlhdB.jpg" alt="Bố Già">
+                        <h3><a href="phimbogia.html">Bố Già</a></h3>
+                        <p>Mar 14, 1972</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="movie-item">
+                        <img src="img/aCoD1DQAo0J60wWA10A5owzc3Hq.jpg" alt="Ma Trận">
+                        <h3><a href="phimmatran.html">Ma Trận</a></h3>
+                        <p>Mar 31, 1999</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="phimle">
+                <h2>Phim Lẻ</h2>
+                <div class="movie-grid">
+                    <div class="movie-item">
+                        <img src="img/AsGpIREstvwExc3UqczmIPP4pay.jpg" alt="Vua Sư Tử">
+                        <h3><a href="phimsutu.html">Vua Sư Tử</a></h3>
+                        <p>Jun 24, 1994</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="movie-item">
+                        <img src="img/eJzxxtSsqGoxdkX9JLzUhooTxMn.jpg" alt="Ký Sinh Trùng">
+                        <h3><a href="phimsitrung.html">Ký Sinh Trùng</a></h3>
+                        <p>Jun 21, 2019</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="movie-item">
+                        <img src="img/k9tv1rXZbOhH7eiCk378x61kNQ1.jpg" alt="Mộ Đom Đóm">
+                        <h3><a href="phimdomdom.html">Mộ Đom Đóm</a></h3>
+                        <p>Apr 16, 1988</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="movie-item">
+                        <img src="img/mGY5CrLuEFyxtPotHHqKNRCWvda.jpg" alt="Kẻ Vô Danh">
+                        <h3><a href="phimvodanh.html">Kẻ Vô Danh</a></h3>
+                        <p>Mar 18, 2021</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="phimbo">
+                <h2>Phim Bộ</h2>
+                <div class="movie-grid">
+                    <div class="movie-item">
+                        <img src="img/phimbo1.jpg" alt="Thách Mà Dám Yêu">
+                        <h3><a href="phimbo1.html">Thách Mà Dám Yêu</a></h3>
+                        <p>2024</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="movie-item">
+                        <img src="img/phimbo2.jpg" alt="Đêm Lãng Mạn Ở Hagwon">
+                        <h3><a href="phimbo2.html">Đêm Lãng Mạn Ở Hagwon</a></h3>
+                        <p>May 19, 2023</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="movie-item">
+                        <img src="img/phimbo3.jpg" alt="Sinh Vật Thống Trị">
+                        <h3><a href="phimbo3.html">Sinh Vật Thống Trị</a></h3>
+                        <p>2024</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="movie-item">
+                        <img src="img/phimbo4.jpg" alt="Tuần Lộc Bé Con">
+                        <h3><a href="phimbo4.html">Tuần Lộc Bé Con</a></h3>
+                        <p>2024</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-left">
+                <p>TOPPHIM cùng tận hưởng và trải nghiệm xem phim mới nhất miễn phí ngay tại TOPPHIM và dành thời gian thư giãn cùng gia đình và bạn bè. TOPPHIM với một thư viện xem phim online miễn phí chất lượng cao với phụ đề tiếng Việt - thuyết minh - lồng tiếng, phim chiếu rạp phong phú đặc sắc, nhiều bộ phim hay được cập nhật nhanh nhất.</p>
+            </div>
+            <div class="footer-center">
+                <h2>Thông tin liên hệ</h2>
+                <p>Email: webphim@123.com</p>
+                <p>SDT: 0904371109</p>
+                <p>Địa chỉ: 180 Đ. Cao Lỗ, Phường 4, Quận 8, TP.HCM</p>
+            </div>
+            <div class="footer-right"></div>
+            <p>&copy; MSSV: DH52111467</p>
+            <p>&copy; Họ Tên: Huỳnh Tấn Phát</p>
+            <p>&copy; Lớp: D21_TH1.2</p>
+            <p>&copy; Nhóm/Ca: Nhóm 21, Thứ 5, Ca 1</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="CSS/js/java.js"></script>
+</body>
+</html>

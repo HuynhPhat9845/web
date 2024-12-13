@@ -1,0 +1,89 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header-flex-2 {
+    background: tomato;
+    flex: 1 100%;
+}
+
+.footer-flex-2 {
+    background: lightgreen;
+    flex: 1 100%;
+    order: 4;
+}
+
+.main {
+    text-align: left;
+    background: deepskyblue;
+    height: fit-content;
+    flex: 3 0px;
+    order: 2;
+}
+
+.main img 
+{
+    width: 100%;
+}
+
+.aside {
+    flex: 1 0 0 ;
+    height: auto;
+    min-height: 400px;
+}
+
+.aside-1 {
+    background: gold;
+    height: auto;
+    order: 1;
+}
+
+.aside-2 {
+    background: hotpink;
+    height: auto;
+    order: 3;
+}
+/* Media queries */
+
+@media screen and (max-width: 1200px) {
+	.main {
+        flex: 1 100%; /* Chuyển main thành 1 cột khi kích thước nhỏ hơn 1200px */
+        order: 0; /* Đặt main ở vị trí cuối cùng */
+    }
+    .aside-1,
+    .aside-2 {
+        flex: 1 50%; /* Chuyển hai aside thành 2 cột khi kích thước nhỏ hơn 1200px */
+        order: 1; /* Đặt cả hai aside lên đầu */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        flex: 1 0 100%; /* Chuyển main thành 1 cột khi kích thước nhỏ hơn 600px */
+        order: 0; /* Đặt main ở vị trí cuối cùng */
+    }
+    .aside {
+        flex: 1 100%; /* Chuyển cả hai aside thành 1 cột khi kích thước nhỏ hơn 600px */
+        order: 1; /* Đặt aside lên đầu */
+    }
+}
+
+/* Responsive font size */
+body {
+    font-size: 16px; /* Font size mặc định */
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 20px; /* Font size khi responsive thành 1 cột */
+    }
+}
+
+/* Responsive image */
+.responsive-img {
+    max-width: 100%; /* Ảnh sẽ không vượt quá kích thước của container */
+    height: auto; /* Chiều cao tự động điều chỉnh để giữ tỉ lệ */
+}
